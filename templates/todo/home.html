@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block title %}
+Topshiriqlar
+{% endblock %}
+
+
+<!-- CONTENT -->
+
+{% block content %}
+
+
+<!-- NAVBAR -->
+{% include 'todo/navbar.html' %}
+
+<table class="table mt-3">
+    <thead>
+    <tr>
+        <th class="w-75" scope="col">Topshiriqlar</th>
+        <th class="text-center" scope="col">O'zgartirish</th>
+        <th class="text-center" scope="col">O'chirish</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Mark</td>
+
+        <td class="text-center">
+            <button type="button" class="btn btn-outline-warning">
+                <i class="bi bi-pencil-square"></i>
+            </button>
+        </td>
+        <td class="text-center">
+            <button type="button" class="btn btn-outline-danger">
+            <i class="bi bi-trash"></i>
+
+            </button>
+        </td>
+    </tr>
+
+    </tbody>
+
+</table>
+{% endblock %}
